@@ -6,8 +6,9 @@
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
-	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',//应用基础跟目录配置
+	'name'=>'My Web Application', //应用名
+	'defaultController'=>'site',//默认控制器
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -73,6 +74,15 @@ return array(
 				*/
 			),
 		),
+
+//        'cache'=>array(
+//            'class'=>'CMemCache',
+//            'servers'=>array(
+//                array('host'=>'server1', 'port'=>11211, 'weight'=>60),
+//                array('host'=>'server2', 'port'=>11211, 'weight'=>40),
+//            ),
+//        )
+
 
 	),
 
